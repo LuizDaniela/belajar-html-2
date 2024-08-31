@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>form biodata</title>
+    <style>
+      body{
+        border: solid 1px black;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="0" width="170px" padding="30px">
+      <tr>
+        <td colspan="3">
+          <h2><center>Form Input Biodata</center></h2>
+        </td>
+      </tr>
+      <form name="fm-input">
+        <tr>
+          <td><label for="nama">Nama Lengkap</label></td>
+          <td>:</td>
+          <td><input type="text" size="20" name="nama" id="name"></td>
+        </tr>
+        <tr>
+          <td><label for="ttl">Tempat, Tanggal Lahir</label></td>
+          <td>:</td>
+          <td><input type="text" size="20" name="nama">,
+            <input type="date" name="nama" id="tgl"></td>
+        </tr>
+        <tr>
+          <td><label for="alamat">Alamat</label></td>
+          <td>:</td>
+          <td><textarea id="alamat" cols="25" rows="3"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="telp">No Telp/HP</label></td>
+          <td>:</td>
+          <td><input type="number" size="20" name="telp" id="telp"></td>
+        </tr>
+        <tr>
+          <td><label for="jkl">Jenis Kelamin</label></td>
+          <td>:</td>
+          <td><input checked type="radio" name="jkl" value="laki-laki" id="laki">
+            <label for="laki">Laki-Laki</label>
+            <input type="radio" name="jkl" value="perempuan" id="perempuan">
+            <label for="perempuan">Perempuan</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="agama">Agama</label></td>
+          <td>:</td>
+          <td><select name="agama" id="agama">
+            <option value="pilih">-- Pilih Agama --</option>
+            <option value="islam">Islam</option>
+            <option value="kristen">Kristen</option>
+            <option value="katolik">Katolik</option>
+            <option value="Hindu">Hindu</option>
+            <option value="buddha">Buddha</option>
+            <option value="konghucu">Konghucu</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td><label for="hobi">Hobi</label></td>
+          <td>:</td>
+          <td>
+            <input checked type="checkbox" name="hobi" id="bacabuku" value="bacabuku">
+            <label for="bacabuku">Baca Buku</label>
+            <input type="checkbox" name="hobi" id="koding" value="koding">
+            <label for="koding">Koding</label>
+            <input type="checkbox" name="hobi" id="olahraga" value="olahraga">
+            <label for="olahraga">Olahraga</label>
+            <input type="checkbox" name="hobi" id="bacabuku" value="bacabuku">
+            <label for="bacabuku">Baca Buku</label>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Submit"></td>
+          <td><input type="reset" value="Clear!"></td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>

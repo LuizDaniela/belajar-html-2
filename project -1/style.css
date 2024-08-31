@@ -1,0 +1,52 @@
+ /* style body belajar di internet & font */
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #C0C78C;
+    color: #FEFAE0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* edit agar link tidak ada garis bawah dan tambahkan saat di hover&saat diklik berubah warna */
+a{
+color: #FEFAE0;
+text-decoration: none;
+}
+a:hover{
+color: #d9e67c;
+}
+a:active{
+color: #C0C78C;
+}
+/* ubah warna teks yang striketrue jadi agak samar */
+.ff{
+    color: #fefae080;
+}
+/* style h1 warna berubah ubah belajar pake AI */
+h1{
+    background: linear-gradient(90deg, #C0C78C, #D1D89F, #A3AD74, #8B9365, #E8EAC3, #F5F7E0);
+    background-size: 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: pelangi 5s infinite;
+    -webkit-text-stroke: 1px #ffffff6e;
+}
+@keyframes pelangi {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
